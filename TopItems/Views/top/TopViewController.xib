@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TopViewController" customModule="TopItems" customModuleProvider="target">
+            <connections>
+                <outlet property="itemTableView" destination="AQi-0E-Gah" id="XSo-Kw-G2U"/>
+                <outlet property="subtypeCollectionView" destination="Bby-2U-32t" id="ISL-9B-fB5"/>
+                <outlet property="subtypeCollectionViewHeight" destination="E9j-7R-eEE" id="1IJ-8A-wb3"/>
+                <outlet property="typeCollectionView" destination="baX-jX-tIn" id="Ug8-TK-QpK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="baX-jX-tIn">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="jb4-4e-n6Z"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bby-2U-32t">
+                    <rect key="frame" x="0.0" y="50" width="375" height="0.0"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="E9j-7R-eEE"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AQi-0E-Gah">
+                    <rect key="frame" x="0.0" y="50" width="375" height="617"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Bby-2U-32t" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="0mR-V7-hFX"/>
+                <constraint firstItem="baX-jX-tIn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="7e2-of-C7t"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="baX-jX-tIn" secondAttribute="trailing" id="7ze-Z6-gxz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Bby-2U-32t" secondAttribute="trailing" id="Fye-zX-qgV"/>
+                <constraint firstItem="AQi-0E-Gah" firstAttribute="top" secondItem="Bby-2U-32t" secondAttribute="bottom" id="HNt-ZE-0j6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="AQi-0E-Gah" secondAttribute="bottom" id="KyY-vX-pNN"/>
+                <constraint firstItem="Bby-2U-32t" firstAttribute="top" secondItem="baX-jX-tIn" secondAttribute="bottom" id="Vuj-e4-oW6"/>
+                <constraint firstItem="AQi-0E-Gah" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="sWy-Hu-zjE"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="AQi-0E-Gah" secondAttribute="trailing" id="zIz-hn-E6i"/>
+                <constraint firstItem="baX-jX-tIn" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="zer-gU-76i"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="120"/>
+        </view>
+    </objects>
+</document>
